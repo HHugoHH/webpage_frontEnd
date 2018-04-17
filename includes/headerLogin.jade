@@ -1,0 +1,19 @@
+.grid-container(style="width:100%;z-index:1000")
+  .top-bar-container(data-sticky-container='')
+    .sticky.sticky-topbar(data-sticky, data-options='anchor: page; marginTop: 0; stickyOn: small;')
+      .top-bar.posibleBar
+        #scrollMenuLogo.top-bar-title
+          a(href="#")
+            img(src="img/logo/logo_negro.png", alt="POSiBLE")
+        .top-bar-left.hide-for-small-only
+          ul.posibleTABS.dropdown.menu(data-dropdown-menu,data-options="disableHover:true;clickOpen:true")
+            li.togInfo.iniMenu: a(href="#")#ini INICIO
+            li.togInfo.convoMenu: a(href="#")#convo CONVOCATORIA 2018
+            li.togInfo.noticiasPosible#ini: a(href="http://www.posible.org.mx",target="_blank")#noticias NOTICIAS POSIBLE
+        .top-bar-right.lr_container
+          .grid-x.align-right
+            .cell.small-12    
+              nav.posibleLogReg
+                ul.menu
+                  li.lr_menu: a(href="#")#reg Registro
+                  li.lr_menu: a(href="#")#login Iniciar Sesión

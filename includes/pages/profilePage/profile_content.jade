@@ -1,0 +1,112 @@
+.profileContent
+  .grid-x.grid-padding-x
+    .cell.small-12.medium-12.large-12
+      h1 Edición de Perfil
+    .cell.small-12.medium-12.large-12
+      .verticalMSG.callout.success.hide
+        p
+        | Estas participando en una vertical de la convocatoria, 
+        | si quieres saber más ve a la sección de 
+        a(href='#', target='_blank') "Verticales de la Convocatoria"
+        |  para conocer las actividades adicionales en tu Estado
+    .cell.small-12.medium-12.large-12
+      form#profile_f(method='post', action='../perfil/', enctype='multipart/form-data', style='width:100%;')
+        .grid-x.grid-padding-x.grid-padding-y
+          .cell.small-12.medium-6.large-6
+            .grid-x.grid-padding-x.grid-padding-y
+              .cell.small-12.medium-6.large-6
+                label.modelSubtitles Nombre (s)
+                input(type='text')#id_nombre
+              .cell.small-12.medium-6.large-6
+                label.modelSubtitles Apellidos
+                input(type='text')#id_apellido
+              .cell.small-12.medium-6.large-6
+                label.modelSubtitles Estado de residencia
+                select#id_id_estado
+                  option(value='1') &nbsp;
+                  option(value='20') Oaxaca
+                  option(value='2') Baja California
+                  option(value='audi') Estado de México
+              .cell.small-12.medium-6.large-6
+                label.modelSubtitles Municipio
+                select#id_municipio
+                  option(value='1') &nbsp;
+                  option(value='2') M1
+                  option(value='3') M2
+                  option(value='4') M3
+              .cell.small-12.medium-6.large-6
+                label.modelSubtitles Fecha de Nacimiento
+                input.datepicker(type='text')
+              .cell.small-12.medium-6.large-6
+                label.modelSubtitles Sexo
+                ul#id_sexo
+                  li
+                    label(for='id_sexo_0')
+                      input#id_sexo_0(type='radio', name='sexo', value='Hombre', required='')
+                      |  Masculino
+                  li
+                    label(for='id_sexo_1')
+                      input#id_sexo_1(type='radio', name='sexo', value='Mujer', required='', checked='')
+                      |  Femenino
+          .cell.small-12.medium-6.large-6.imgPerfil
+            input(type='hidden',name='dtaImg')#imgData
+            p(style='color:red;') * Opcional
+            .wrapperTopNew
+              a(href="#popup_ImgCrop"): img#res(src="img/no_photo.png")
+              a(href="#popup_ImgCrop") 
+                .imageTopLabel
+                  .grid-x
+                    .cell.small-9.medium-9.large-9
+                      p Subir Imagen
+                    .cell.shrink
+                      i.fi-camera.large
+          .cell.small-12.medium-3.large-3
+            label.modelSubtitles Máximo grado de estudios
+            input(type='text')
+          .cell.small-12.medium-3.large-3
+            label.modelSubtitles Escuela
+            input(type='text')
+          .cell.small-12.medium-3.large-3
+            .grid-x
+              .cel.small-12.medium-12.large-12
+                label.modelSubtitles Telefono 1 (Móvil)
+              .cell.small-3.medium-3.large-3
+                input(type='text')
+              .cell.small-9.medium-9.large-9
+                input(type='text')
+          .cell.small-12.medium-3.large-3
+            .grid-x
+              .cell.small-12.medium-12.large-12
+                label.modelSubtitles Telefono 2 (Casa/Móvil)
+              .cell.small-3.medium-3.large-3
+                input(type='text')
+              .cell.small-9.medium-9.large-9
+                input(type='text')
+          .cell.small-12.medium-3.large-3
+            label.modelSubtitles Correo Electrónico
+            input(type='text')
+          .cell.small-12.medium-3.large-3
+            label.modelSubtitles Correo Alternativo
+            input(type='text')
+          .cell.small-12.medium-6.large-6
+            input(type='text')
+
+          
+          .cell.small-12.medium-6.large-6
+            .grid-x.stakeHolders
+              .cell.small-12.medium-3.large-3
+                label.modelSubtitles ¿Tienes socios?
+                input.yes-no(type='radio', name='socios', value='si') 
+                | &nbsp;Si
+                input.yes-no(type='radio', name='socios', value='no',checked) 
+                | &nbsp;No
+              .cell.small-12.medium-9.large-9
+                p(style='color:red;') * Opcional
+              .cell.small-12.medium-12.large-12.hide.sociosControl
+                label &nbsp;
+                img(src="http://placehold.it/500x200")
+          .cell.small-6.medium-6.large-6
+            include enterasteControl
+          .cell.small-12.medium-12.large-12.btn_canva_container
+            button.button.warning(type='submit')
+              strong  Guardar perfil

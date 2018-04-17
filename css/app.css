@@ -1,0 +1,231 @@
+.login {
+    width: 100%;
+    overflow: hidden;
+    background: white;
+    background-padding: 35px
+}
+
+body{
+  background-color: #15253a;
+}
+.cabeza {
+    margin-bottom: -8px;
+    margin-right: -540px
+}
+a.button {
+    background-color: white;
+    color: black;
+    font-family: "calibri";
+    font-weight: 800
+}
+a.button:hover {
+    background-color: #f9d106;
+    color: black
+}
+a.button:focus {
+    background-color: #15253a;
+    color: white
+}
+a.boton2 {
+    background-color: #f9d106;
+    color: black;
+    margin-left: 108px;
+    font-family: "calibri";
+    font-weight: 800
+}
+a.boton2:hover {
+    background-color: #cc8b00;
+    color: black
+}
+a.boton2:focus {
+    background-color: #cc8b00;
+    color: black
+}
+a.button.verti {
+    background-color: white;
+    color: black;
+    font-family: "calibri";
+    font-weight: 800
+}
+a.button.verti:hover {
+    background-color: #f9d106;
+    color: black
+}
+a.button.verti:focus {
+    background-color: #15253a;
+    color: white
+}
+a#convo {
+    margin-left: -2px
+}
+a#vert {
+    margin-left: -1px;
+    height: 40px;
+    border: white
+}
+nav.hover-underline-menu {
+    margin-left: 752px;
+    margin-top: -33px;
+    padding-right: 30px;
+    background-color: #f9d106
+}
+.verticales {
+    color: black
+}
+.boton {
+    background-color: #f9d106;
+    color: black
+}
+.boton:hover {
+    color: black
+}
+.reg1 {
+    background-color: #585858;
+    background-color-border-color: #585858
+}
+.reg2 {
+    background-color: #585858;
+    border-color: #585858;
+    margin-left: -13px
+}
+.reg2:hover {
+    background-color: #585858;
+    border-color: #585858
+}
+.reg3 {
+    background-color: #585858;
+    border-color: #585858;
+    margin-left: -12px
+}
+.letra {
+    color: white;
+    margin-left: -1px
+}
+.letra2 {
+    color: white;
+    margin-left: -66px
+}
+.casa {
+    margin-top: 126px
+}
+.loginDiv.hide {
+    margin-top: 126px
+}
+a.button.warning.boton9 {
+    margin-left: 129px;
+    font-weight: normal;
+    background-color: #f9d106;
+    font-family: "calibri"
+}
+a.button.warning.boton9:hover {
+    background-color: #cc8b00;
+    color: black
+}
+a.button.warning.boton9:focus {
+    background-color: #cc8b00;
+    color: black
+}
+a.button.warning.boton7 {
+    margin-left: 60px;
+    font-weight: normal;
+    background-color: #f9d106;
+    font-family: "calibri"
+}
+a.button.warning.boton7:hover {
+    background-color: #cc8b00;
+    color: black
+}
+a.button.warning.boton7:focus {
+    background-color: #cc8b00;
+    color: black
+}
+a.button.warning.boton3 {
+    font-weight: normal;
+    background-color: #2372a3;
+    font-family: "calibri"
+}
+a.button.boton4 {
+    background-color: #3b5998;
+    color: white;
+    margin-top: 16px;
+    margin-left: 0px;
+    width: 188px
+}
+a.button.boton4:hover {
+    background-color: #143069
+}
+a.button.boton5 {
+    background-color: #0077b5;
+    color: white;
+    margin-top: -4px;
+    margin-left: 0px;
+    width: 188px
+}
+a.button.boton5:hover {
+    background-color: #143069
+}
+a.button.boton6 {
+    background-color: #3b5998;
+    color: white;
+    margin-top: 16px;
+    margin-left: 0px;
+    width: 189px
+}
+a.button.boton6:hover {
+    background-color: #143069
+}
+.face {
+    margin-left: 53px
+}
+.face2 {
+    margin-left: 53px;
+    margin-top: -19px;
+    height: 41px
+}
+.face3 {
+    margin-left: 46px
+}
+.face4 {
+    margin-left: 47px;
+    margin-top: -19px;
+    height: 41px
+}
+.letra4 {
+    color: white
+}
+input#checkbox1 {
+    margin-left: -9px
+}
+.aviso {
+    color: white;
+    margin-left: 13px
+}
+.cell.small-6 {
+    margin-left: 51px
+}
+.texto2 {
+    padding-left: 56px;
+    color: white;
+    margin-top: 126px;
+    margin-left: 9px
+}
+.texto3 {
+    padding-left: 147px;
+    color: white;
+    margin-top: -35px;
+    margin-left: -89px
+}
+.warning.button {
+    padding: 10px;
+    margin-left: 316px;
+    font-weight: bolder;
+    margin-top: 21px;
+    background: #f9d106;
+    color: black
+}
+.button.warning:hover {
+    color: black
+}
+.fondo {
+    background-color: #15253a
+}

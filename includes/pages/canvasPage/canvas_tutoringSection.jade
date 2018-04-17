@@ -1,0 +1,46 @@
+.grid-x
+  .cell.small-12.medium-12.large-12
+    h5 Te recomendamos ver estos videos:
+  .cell.small-12.medium-12.large-12
+    #introduc_div
+      #embedIntro_div Loading video...
+        input#vidInt(type="hidden",value='https://vimeo.com/152123376/91573845dc')
+    #minic_div.hide
+      #embedMini_div Cargando video...
+        input#vidMini(type="hidden",value='https://vimeo.com/151136234/487f04055f')
+  .cell.small-12.medium-12.large-12
+    .centerIT
+      button.hollow.button(href='#')#introduc_vid Introducción
+      button.hollow.button(href='#')#mini_class Mini Clase
+  .cell.small-12.medium-12.large-12
+    h5 Artículos
+  .cell.small-12.medium-12.large-12
+    a.button.helpConcepts(href='#')
+      p.data 
+        img.libro(src='img/icons/file.png') 
+        |  Crónica de una muerte anunciada. 
+  .cell.small-12.medium-12.large-12
+    a.button.helpConcepts(href='#')  
+      p.data2
+        img.libro(src='img/icons/globe.png')
+        |  Corazón coraza   
+  .cell.small-12.medium-12.large-12
+    a.button.helpConcepts(href='#')
+      p.data2
+        img.libro(src='img/icons/icon-play.png')
+        |  Rayuela
+  .cell.small-12.medium-12.large-12
+    h5 Glosario
+  .cell.small-12.medium-12.large-12
+    ul.accordion(data-accordion='',data-multi-expand="true",data-allow-all-closed="true")
+      li.accordion-item.is-active(data-accordion-item='')
+        // Accordion tab title
+        a.accordion-title.helpGlosario(href='#') Crowfunding 
+        // Accordion tab content: it would start in the open state due to using the `is-active` state class.
+        .accordion-content(data-tab-content='')
+          p Panel 1. Lorem ipsum dolor
+      li.accordion-item.is-active(data-accordion-item='')
+        a.accordion-title.helpGlosario(href='#') Proceso 
+        .accordion-content(data-tab-content='')
+          p Panel 1. Lorem ipsum dolor
+    

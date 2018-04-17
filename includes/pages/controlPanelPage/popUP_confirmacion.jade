@@ -1,0 +1,17 @@
+#popup_REV.overlay_popup
+  .area_popup.popChico
+    .grid-x.grid-padding-y                      
+      .cell.small-12.medium-12.large-12
+        h3 Confirmación
+        a.close(href="#") ×
+      .cell.small-12.medium-12.large-12
+        .cont_popup
+          p Estás apunto de enviar el proyecto: {{Proy_name}} a revisión con un mentor
+          ul
+            li Los campos de tu perfil excepto tu correo alternativo y teléfonos
+             strong YA NO SE PODRÁN EDITAR.
+            li Podrás bajar el PDF de tu proyecto
+            li Se irá actualizando el estado de tu proyecto en el proceso de evaluación para que lo sigas de cerca.
+      .cell.small-12.medium-12.large-12.popupButtons
+        a#enviarproyec.button.success(href=''): strong Enviar
+        a#cancelarproy.button.alert(href=''): strong Cancelar 

@@ -1,0 +1,21 @@
+#popup_ImgCrop.overlay_popup
+  .area_popup.popChico
+    .grid-x.grid-padding-y                      
+      .cell.small-12.medium-12.large-12
+        h3 Sube & Recorta tu imagen 
+        a.close(href="#") ×
+      .cell.small-12.medium-12.large-12.popupButtons
+        span 1. 
+        label.custom-file-upload(for='upload')
+          i.fi-upload
+          |  Sube tu imagen
+        input#upload(type='file',accept="image/*")
+        span 2. Ubica tu imagen dentro del recuardo blanco
+        br
+      .cell.small-12.medium-12.large-12.popupButtons
+        .cont_popup
+          .upload-msg
+          .upload-demo-wrap
+            #imgCrop
+      .cell.small-12.medium-12.large-12.popupButtons
+        a(href="#").button.warning.upload-result: strong Recortar

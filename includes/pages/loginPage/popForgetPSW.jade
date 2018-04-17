@@ -1,0 +1,15 @@
+#popupF_PASS.overlay_popup
+  .area_popup.popChico
+    .grid-x.grid-padding-y                      
+      .cell.small-12.medium-12.large-12
+        h2 Cambiar contraseña
+        a.close(href="#") ×
+      .cell.small-12.medium-12.large-12
+        .cont_popup
+          p Por tu seguridad, POSiBLE no guarda contraseñas, sólo podemos generar una nueva contraseña y te la enviamos a tu correo
+          form
+            label
+              | Correo electrónico
+              input(type='password', placeholder='')
+      .cell.small-12.medium-12.large-12.popupButtons
+        a.button.warning(href="")#cambcontra: strong Enviar Contraseña     

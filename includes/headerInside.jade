@@ -1,0 +1,27 @@
+.grid-container(style="width:100%;z-index:1000")
+  .top-bar-container(data-sticky-container='')
+    .sticky.sticky-topbar(data-sticky, data-options='anchor: page; marginTop: 0; stickyOn: small;')
+      .top-bar.posibleBar
+        #scrollMenuLogo.top-bar-title
+          a(href="#")
+            img(src="img/logo/logo_negro.png", alt="POSiBLE")
+        .top-bar-left
+          ul.posibleTABS.dropdown.menu(data-dropdown-menu,data-options="disableHover:true;clickOpen:true")
+            li.togInfo.genView: a(href="#")#visGen Vista general de la cuenta
+            li.togInfo.profileEd: a(href="#")#edPerfil Editar perfil
+            li.togInfo.createProj: a(href="#")#newProy Crear proyecto
+            li.togInfo.posibleNews#posNews: a(href="http://www.posible.org.mx",target="_blank")#noticias Noticias
+        .top-bar-right.lr_container
+          .grid-x.align-right
+            .cell.small-12    
+              nav.posibleLogReg
+                ul.dropdown.menu(data-dropdown-menu, data-options="disableHover:true;clickOpen:true")
+                  li.lr_menu: a.no-active-lnk
+                  li.lr_menu
+                    a(href="#",style="padding:0;")#opMenuC
+                      img.profilePic(src='img/no_photo.png',width='40px',height='40px')
+                      strong Opciones de Cuenta
+                    ul.menu
+                      li.acc_man 
+                        a(href="#popupPASS")#opPsw Cambiar Contraseña     
+                      li.acc_man: a(href="#")#opCS Cerrar Sesión

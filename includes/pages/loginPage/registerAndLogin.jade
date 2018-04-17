@@ -1,0 +1,73 @@
+.registerDiv
+  h2 Registro
+  form#reg_form(action="../registro/",method="POST",content='text/html; charset=UTF-8')
+    .grid-x.align-center
+      .cell.small-12.medium-12.large-12
+        input(id="nombre",name="n",type="text",placeholder="Tu Nombre(s)")
+      .cell.small-12.medium-12.large-12
+        input(id="correo",name="e",type="email",placeholder="Correo electrónico")
+      .cell.small-12.medium-12.large-12
+        input(id="correo_conf" ,name="ce",type="email",placeholder="Verifica tu correo electrónico")
+      .cell.small-12.medium-12.large-12.hide
+        .callout.alert
+          p Este correo ya tiene una cuenta en POSiBLE.
+      .cell.small-12.medium-12.large-12.avpriv
+        input#checkbox1(type='checkbox') 
+        label(for="checkbox1") &nbsp;He leído y acepto el 
+          strong: a(href="#popup_ap") aviso de privacidad.
+        include popAvisoP
+      .cell.small-12.medium-12.large-12.termsandreg
+          input#checkbox2(type='checkbox') 
+          label(for="checkbox2") &nbsp;He leído y acepto los 
+            strong: a(href="#popup_term") términos y condiciones
+          include popTermCond
+      .cell.small-4.medium-4.large-4
+        strong: a.button.warning(href="")#regSubmitButton Registrarse
+      .cell.small-12.medium-12.large-12
+        .grid-x
+          .cell.small-12.medium-12.large-12
+            a.button.fb(href='') 
+              .grid-x.sizeBtn
+                .cell.small-11.medium-11.large-11
+                  p Registrate con Facebook&nbsp;  
+                .cell.small-1.medium-1.large-1.icono
+                  i.fi-social-facebook.medium
+          .cell.small-12.medium-12.large-12
+            a.button.lkin(href='') 
+              .grid-x.sizeBtn
+                .cell.small-11.medium-11.large-11
+                  p Registrate con Linkedin&nbsp;  
+                .cell.small-1.medium-1.large-1.icono
+                  i.fi-social-linkedin.medium
+.loginDiv.hide
+  h2 Iniciar Sesión
+  form#login_form(action="../login/",method="POST",content='text/html; charset=UTF-8')
+    .grid-x.align-center
+      .cell.small-12.medium-12.large-12
+        input(id="login_correo",name="e",type="text",placeholder="Correo electrónico")
+      .cell.small-12.medium-12.large-12
+        input(id="pswEnter",name="p",type="password",placeholder="Contraseña")
+      .cell.small-12.medium-12.large-12.hide
+        .callout.alert
+          p Usuario o contraseña incorrectos, favor de verificar.
+      .cell.small-12.medium-12.large-12.forgetZone
+        .grid-x
+          .cell.small-7.medium-7.large-7
+            strong: a(href="#popupF_PASS") ¿Olvidaste tu contraseña?
+            include popForgetPSW
+          .cell.auto(style="padding-left:4%;")
+            strong: a.button.warning(href="")#loginSubmitButton Iniciar Sesión
+          .cell.small-12.medium-12.large-12
+            a.button.fb(href='') 
+              .grid-x.sizeBtn
+                .cell.small-11.medium-11.large-11
+                  p Iniciar Sesión con Facebook&nbsp;  
+                .cell.small-1.medium-1.large-1.icono
+                  i.fi-social-facebook.medium
+          .cell.small-12.medium-12.large-12
+            a.button.lkin(href='') 
+              .grid-x.sizeBtn
+                .cell.small-11.medium-11.large-11
+                  p Iniciar Sesión con Linkedin&nbsp;  
+                .cell.small-1.medium-1.large-1.icono
+                  i.fi-social-linkedin.medium

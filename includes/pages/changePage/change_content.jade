@@ -1,0 +1,28 @@
+.changePcontent
+  .grid-x
+    .cell.small-12.medium-12.large-12.ch_title
+      h1 Cambiar contraseña
+    .cell.small-12.medium-12.large-12
+      .changZone
+        .grid-x
+          .cell.small-12.medium-12.large-12.ch_title
+            p 
+              |Bienvenido, en esta pantalla podrás cambiar la contraseña del correo 
+              strong {{email}}
+            p(style="color:red;") * [MENSAJE DE ERROR]
+          .cell.small-12.medium-12.large-12
+            form#form_change 
+              .grid-x.grid-padding-y
+                .cell.small-12.medium-12.large-12.hide
+                  input(type="hidden",name="c")
+                  input(type="hidden",name="r")
+                .cell.small-12.medium-12.large-12
+                  label(for="pas") Ingresa una contraseña nueva:
+                  input#pas(type="password",name="p")
+                .cell.small-12.medium-12.large-12
+                  label(for="pas_conf") Confirma tu contraseña:
+                  input#pas_conf(type="password",name="p_conf")
+                .cell.small-12.medium-12.large-12.popupButtons
+                  a.button.warning#confirm_cpsw(href="") 
+                    strong Cambiar contraseña
+                     

@@ -1,0 +1,51 @@
+.grid-container(style="width:100%;z-index:1000")
+  //UPPER TOP
+  header#header
+    .top-bar
+      ul#gn-menu.gn-menu-main.show-for-small-only
+        li.gn-trigger
+          a.gn-icon.gn-icon-menu
+            span menu
+          nav.gn-menu-wrapper
+            ul.gn-menu
+              //li.gn-search-item
+                input(placeholder="Search", type="search").gn-search
+                a.gn-icon.gn-icon-search
+                  span Search
+              li: a(href="").gn-icon.gn-icon-earth Vista general de la cuenta
+              li: a(href="").gn-icon.gn-icon-help Editar Perfil
+              li: a(href="").gn-icon.gn-icon-archive Crear Proyecto
+        li: a(href=""): img(src="img/logo/logo_negro.png", alt="POSiBLE")
+      .top-bar-title
+        img(src="img/logo/logo_negro.png", alt="POSiBLE")
+        
+  //STICKY MENU
+  div(data-sticky-container,style="z-index:1000;").hide-for-small-only
+    div(data-sticky, data-margin-top='0', data-top-anchor="header:bottom",
+    data-btm-anchor="content:bottom",style="border-bottom: 1px solid #cccccc;")
+      .top-bar.topbar-sticky-shrink(style="padding: 0;")
+        #scrollMenuLogo.top-bar-title.hide
+          img(src="img/logo/logo_negro.png", alt="POSiBLE")
+        .top-bar-left
+          nav.posibleTABS
+            ul.dropdown.menu(data-dropdown-menu, data-options="disableHover:true;clickOpen:true")
+              li.togInfo.convoMenu: a(href="#") Vista general de la cuenta
+              li.togInfo.iniMenu: a(href="#") Editar Perfi
+              li.vertPosible: a(href="#") Crear Proyecto
+                
+        .top-bar-right.lr_container
+          .grid-x.align-right
+            .cell.small-12    
+              nav.posibleLogReg
+                ul.dropdown.menu(data-dropdown-menu, data-options="disableHover:true;clickOpen:true")
+                  li.lr_menu: a.no-active-lnk
+                  li.lr_menu
+                    a(href="#",style="padding:0;")#opMenuC
+                      img.profilePic(src='img/no_photo.png',width='40px',height='40px')
+                      strong Opciones de Cuenta
+                    ul.menu
+                      li.togInfo 
+                        a(href="#popupPASS")#opPsw Cambiar Contraseña     
+                      li.togInfo: a(href="#")#opCS Cerrar Sesión
+
+      

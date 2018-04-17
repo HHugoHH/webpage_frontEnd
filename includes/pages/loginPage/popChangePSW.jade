@@ -1,0 +1,19 @@
+#popupPASS.overlay_popup
+  .area_popup.popChico
+    .grid-x.grid-padding-y                      
+      .cell.small-12.medium-12.large-12
+        h2 Cambiar contraseña
+        a.close(href="#") ×
+      .cell.small-12.medium-12.large-12
+        .cont_popup
+          p  Por seguridad, al cambiar la contraseña se cerrará la sesión actual. Podrás iniciar sesión, sólo con la nueva contraseña.
+          form
+            label
+              | Contraseña actual 
+              input(type='password', placeholder='')
+            br
+            label
+              | Nueva Contraseña
+              input(type='password', aria-describedby='passwordHelpText')
+      .cell.small-12.medium-12.large-12.popupButtons
+        a.button.warning(href="")#cambcontra: strong Cambiar     

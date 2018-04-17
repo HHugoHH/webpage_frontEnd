@@ -1,0 +1,48 @@
+.grid-container(style="width:100%;z-index:1000")
+  //UPPER TOP
+  header#header
+    .top-bar
+      ul#gn-menu.gn-menu-main.show-for-small-only
+        li.gn-trigger
+          a.gn-icon.gn-icon-menu
+            span menu
+          nav.gn-menu-wrapper
+            ul.gn-menu
+              //li.gn-search-item
+                input(placeholder="Search", type="search").gn-search
+                a.gn-icon.gn-icon-search
+                  span Search
+              li: a(href="").gn-icon.gn-icon-earth INICIO
+              li: a(href="").gn-icon.gn-icon-help CONVOCATORIA 2018
+              li: a(href="").gn-icon.gn-icon-archive VERTICALES POSIBLE
+        li: a(href=""): img(src="img/logo/logo_negro.png", alt="POSiBLE")
+      .top-bar-title
+        img(src="img/logo/logo_negro.png", alt="POSiBLE")
+        
+  //STICKY MENU
+  div(data-sticky-container,style="z-index:1000;").hide-for-small-only
+    div(data-sticky, data-margin-top='0', data-top-anchor="header:bottom",
+    data-btm-anchor="content:bottom",style="border-bottom: 1px solid #cccccc;")
+      .top-bar.topbar-sticky-shrink(style="padding: 0;")
+        #scrollMenuLogo.top-bar-title.hide
+          img(src="img/logo/logo_negro.png", alt="POSiBLE")
+        .top-bar-left
+          nav.posibleTABS
+            ul.dropdown.menu(data-dropdown-menu, data-options="disableHover:true;clickOpen:true")
+              li.togInfo.iniMenu: a(href="#")#ini INICIO
+              li.togInfo.convoMenu: a(href="#")#convo CONVOCATORIA 2018
+              li.vertPosible
+                a(href="#") VERTICALES POSIBLE
+                ul.menu
+                  li.togInfo: a(href="#")#vExp ¿Qué son las Verticales POSiBLE?
+                  li.togInfo: a(href="#")#vOax OAXACA
+                  li.togInfo: a(href="#")#vSin SINALOA
+                  li.togInfo: a(href="#")#vBC BAJA CALIFORNIA
+        .top-bar-right.lr_container
+          .grid-x.align-right
+            .cell.small-12    
+              nav.posibleLogReg
+                ul.menu
+                  li.lr_menu: a(href="#")#reg Registro
+                  li.lr_menu: a(href="#")#login Iniciar Sesión
+      

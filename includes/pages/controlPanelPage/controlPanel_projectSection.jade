@@ -1,0 +1,23 @@
+.projectDiv_Section
+  .grid-x.grid-margin-x.cardProjectMain
+    .cell.small-12.medium-12.large-12
+      .img_project(style="background-image: url('http://img1.jurko.net/wall/paper/donald_duck_4.jpg');")
+    .cell.small-12.medium-12.large-12.cardProjectSummary
+      h5.subtitles Nombre del proyecto
+      p.info Synapboxie
+      h5.subtitles Folio
+      p *Se le asignará un folio cuando lo envíes a revisión
+  .grid-x.grid-padding-x.cardProjectOverlay
+    .cell.small-12.medium-12.large-12.cardProjectInfo
+      .grid-x
+        .cell.small-12.medium-12.large-12.projectButtons
+          a.button.warning(href='#'): strong Editar proyecto
+        .cell.small-12.medium-12.large-12.projectButtons
+          a.button.warning(href='#'): strong Generar PDF
+        .cell.small-12.medium-12.large-12.projectButtons
+          a.button.warning(href='#'): strong Enviar a revisión
+        .cell.small-12.medium-12.large-12
+          .progress.bigProgressBar.warning(role='progressbar', tabindex='0', aria-valuenow='50', aria-valuemin='0', aria-valuetext='25%', aria-valuemax='100')
+            span.progress-meter(style='width: 25%')
+              p.progress-meter-text 25%
+          

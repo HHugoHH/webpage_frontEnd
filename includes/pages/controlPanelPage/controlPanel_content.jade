@@ -1,0 +1,22 @@
+.hack.hide
+  input#f_log(type='hidden', value="1-7-2018")
+.controlPanelContent
+  .grid-x.grid-margin-x
+    .cell.small-12.medium-12.headLineNews
+      .grid-x.grid-padding-x.textAreaNews
+        .cell.small-12.medium-4.large-4.greetingUser
+          h3 ¡Hola César! ¡Bienvenido a tu plataforma!
+          h6 En esta pantalla podrás encontrar toda la información de la convocatoria, las fechas relevantes y crear modelos de negocio sobre tus ideas.
+          br
+        .cell.small-12.medium-4.large.4
+          iframe(src='https://free.timeanddate.com/countdown/i62jq7ch/n155/cf100/cm0/cu4/ct0/cs1/ca0/co1/cr0/ss0/cac000/cpc000/pcfff/tc66c/fs100/szw256/szh108/tatFin%20de%20la%20Convocatoria%20POSiBLE/tac000/tptTime%20since%20Event%20started%20in/tpc000/iso2018-04-27T23:59:59/bo2/pa3', allowtransparency='true', frameborder='0', width='264', height='116')
+
+        .cell.small-12.medium-4.large.4.seasonMessages
+          include newsArea
+    .cell.small-12.medium-12.fondo
+      .grid-x.grid-padding-x.grid-padding-y
+        .cell.small-12.medium-4
+          include controlPanel_profileArea
+        .cell.small-12.medium-8
+          include controlPanel_projectArea_MOD
+              
